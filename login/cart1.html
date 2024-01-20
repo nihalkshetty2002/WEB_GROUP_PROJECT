@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Shopping Cart</title>
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrap.com/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Custom CSS styles */
+        .cart-item {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-image {
+            width:300px;
+            height:300px;
+        }
+
+        .description {
+            text-align: start;
+        }
+
+        .btn-buy, .btn-remove {
+            display: block;
+            margin: 10px auto;
+            width: 100px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .btn-buy {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        .btn-remove {
+            background-color: #FF5733;
+            color: white;
+            border: none;
+        }
+
+        .star-rating {
+            color: #FFD700;
+        }
+        .col-md-6{
+            box-shadow: #ccc;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Shopping Cart</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="cart-item">
+                    <img class="product-image" src="img1.jpg" alt="Product 1">
+                    <h2>Product 1</h2>
+                    <p class="description">Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="star-rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                    <button class="btn btn-buy">Buy</button>
+                    <button class="btn btn-remove">Remove</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cart-item">
+                    <img class="product-image" src="im2.jpg" alt="Product 2">
+                    <h2>Product 2</h2>
+                    <p class="description">Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="star-rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i></p>
+                    <button class="btn btn-buy">Buy</button>
+                    <button class="btn btn-remove">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

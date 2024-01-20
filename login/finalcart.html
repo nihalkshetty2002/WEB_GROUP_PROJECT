@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS (you may need to adjust the path) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Shopping Cart</title>
+    <style>
+        img{
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+       .card{
+        border:2px solid antiquewhite;
+        border-radius: 15px;
+        box-shadow: bisque;
+        transition: transform 1.0s;
+       }
+       .card:hover{
+        border: 2px solid black;
+        transform: scale(1.1);
+        box-shadow: beige;
+
+       }
+       .col-12 {
+        margin-bottom: 25px;
+       }
+       .head{
+        text-align: justify;
+        background-color:bisque;
+        padding: 20px;
+        font-size: 30px;
+        border: bottom 2px solid black;
+       }
+       .head h3{
+        margin-left: 20px;
+       }
+       
+       .btn-primary{
+        background-color: black;
+        color:wheat;
+       }
+       .btn-danger{
+        background-color: burlywood;
+        color:black;
+       }
+      
+      
+    </style>
+</head>
+<body>
+    <div class="head">
+        <!-- <img src="arrow.png" class="arrow"> -->
+        <h3>Cart</h33>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <!-- <div class="card-header">
+                        <span class="heart-icon" >❤</span>
+                    </div>  -->
+                    <img src="im3.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name &nbsp;</h5>
+                        <p class="card-text price">$19.99</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <div class="cart-actions mt-3">
+                           
+                            <button class="btn btn-primary mr-2">Buy</button>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <!-- <div class="card-header">
+                        <span class="heart-icon" >❤</span>
+                    </div>  -->
+                    <img src="im3.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name &nbsp;</h5>
+                        <p class="card-text price">$19.99</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <div class="cart-actions mt-3">
+                           
+                            <button class="btn btn-primary mr-2">Buy</button>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <!-- <div class="card-header">
+                        <span class="heart-icon" >❤</span>
+                    </div>  -->
+                    <img src="im3.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name &nbsp;</h5>
+                        <p class="card-text price">$19.99</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <div class="cart-actions mt-3">
+                           
+                            <button class="btn btn-primary mr-2">Buy</button>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <!-- <div class="card-header">
+                        <span class="heart-icon" >❤</span>
+                    </div>  -->
+                    <img src="im3.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name &nbsp;</h5>
+                        <p class="card-text price">$19.99</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <div class="cart-actions mt-3">
+                           
+                            <button class="btn btn-primary mr-2">Buy</button>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Add more product cards in the grid as needed -->
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (you may need to adjust the path) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
