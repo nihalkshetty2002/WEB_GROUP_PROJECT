@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="icon" href="./image/logo1.png">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  font-family: "poppins",sans-serif;   
+   }
+         html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        @media only screen and (max-width:600px)
+        {
+            html, body
+             {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            }
+        }
+
+        .slideshow {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: slideshow 5s infinite;
+    }
+    @keyframes slideshow {
+        0% {
+            background-image: url('backfur.jpg');
+        }
+        25% {
+            background-image: url('backfur2.jpg');
+        }
+        50% {
+            background-image: url('bckfur.jpg');
+        }
+        75% {
+            background-image: url('backfur3.jpg');
+        }
+        100% {
+            background-image: url('backfur4.jpg');
+        }
+    }
+    .form-control {
+    background-color: #f0f0f0bd; /* Use your preferred light color */
+}
+    .card-header {
+        background-color: rgba(238,224,208);/* Use your preferred light color */
+    color: #0c0a0a; /* Change text color if needed */
+}
+
+        .required {
+            color: #ff0000;
+        }
+
+        .container {
+            margin-top: 150px;
+            border-radius: 15%;
+           
+        }
+        .btn
+        {
+            background-color:#f6e0e0;
+
+        }
+        
+       
+    </style>
+</head>
+
+<body class="slideshow">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="card shadow">
+                    <div class="card-header  text-black">
+                        <h3>Payment Details</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="cardNumber">Card Number<span class="required">*</span></label>
+                                <input type="text" class="form-control" id="cardNumber" placeholder="Card Number" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="expirationDate">Expiration Date<span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="cvv">CVV<span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="cvv" placeholder="CVV"required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cardHolderName">Cardholder Name<span class="required">*</span></label>
+                                <input type="text" class="form-control" id="cardHolderName" placeholder="Cardholder Name"required>
+                            </div>
+                            <button type="submit" class="btn" onclick="showCenteredAlert('Payment Successful! Your payment has been processed.');">Submit Payment</button>
+                            <a href="bed.html"><button type="button" class="btn cancel" style="margin-left: 30px;">Cancel</button></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showCenteredAlert(message) {
+        alert(message);
+        // Apply CSS to center the alert
+        var alertBox = document.querySelector('.alert');
+        alertBox.style.position = 'fixed';
+        alertBox.style.left = '50%';
+        alertBox.style.top = '50%';
+        alertBox.style.transform = 'translate(-50%, -50%)';
+    }
+    </script>
+    
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

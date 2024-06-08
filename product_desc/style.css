@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap%27");
+*{
+ /* margin:10px;  */
+margin: 0;
+padding:0;
+font-family:"poppins",sans-serif;
+
+box-sizing: border-box;
+}
+
+/* navbar-top */
+.navbar-top{
+   
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color: rgb(219, 150, 80);
+    border-radius: 50px;
+}
+@media screen and (max-width:420px){
+    .social-link i img{
+        width: 20px;
+    }
+}
+.logo h3{
+    font-weight: bold;
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+    }
+   
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+
+/* navbar */
+#navbar-color{
+    background-color: rgba(238,224,208);
+}
+.navbar-nav{
+    
+    margin:auto;
+}
+
+.nav-link{
+    text-decoration: underline;
+    margin-left: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: 0.5s ease;
+    
+}
+.nav-link:hover{
+    color: rgb(243, 147, 52);
+}
+
+/* Dropdown menu */
+.dropdown-menu{
+    width: 50px;
+}
+
+.container
+{
+    width:100%;
+    
+
+}
+.wrapper
+{
+    width:100%;
+    height:100vh;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+ .text
+{
+    margin-top: 200px;
+    margin-left: 5px;;
+    width:300px;
+     flex-basis: 45%;
+    
+
+}
+ .all-images
+{
+    height :80vh;
+    display:flex;
+} 
+.small-images
+{
+    display: flex;
+    flex-direction: column;
+}
+.small-images img{
+    height:19vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.small-images img:hover
+{
+opacity: 1;
+}
+.main-images img{
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 20px;
+
+}
+p
+{
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 25px;
+    color:black;
+    margin-bottom: 20px;
+    margin: left 0%;;
+}
+.review
+{
+    background-color: #efcc9f;
+    display: inline-block;
+    color:#fff;
+    padding:4px;
+    border-radius: 5px;
+    font-size: 15px;
+    
+
+}
+.review.fa
+{
+    counter-reset:#fff;
+}
+.price
+{
+    color: rgb(29,28,28);
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-right: 10px;;
+}
+.price-box
+{
+    display: flex;
+    align-items: center;
+    margin-left:2px;
+
+}
+button
+{
+    width:150px;
+    color:black;
+    font-size: 12px;
+    outline: none;
+   
+   margin-top:15px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #efcc9f;
+    text-align: center;   
+   
+   
+}
+button.fa{
+margin-right: 10px;
+color:black;
+}
+.buy
+{
+    color:black;
+    background-color:#efcc9f;
+    margin-top: 10px;
+    font-size: 12px;
+}
+@media only screen and (max-width:1200px)
+{
+    .wrapper{
+        flex-direction: column;
+        height: auto;
+        padding:5% 0;
+    }
+    .text{
+        padding-top: 50px;
+    }
+}
+@media only screen and (max-width:600px)
+{
+.all-images
+{
+    flex-direction: column;
+    height: auto;
+}
+.small-images{
+   flex-direction: row;
+   justify-content: space-evenly;
+   order: 1;
+}
+.main-images img {
+    width:100%;
+
+}
+.small-images img
+{
+    width: 25%;
+}
+h2{
+    font-size: 10px;
+    font-weight:bold;
+}
+.content
+{
+    margin-top:0px;
+}
+.text
+{
+    margin-top:0px;
+}
+}
+.checked {
+    color: orange;
+  }
+  .fa-star-half-stroke
+  {
+    color: orange;
+  }
+ .fa{
+width:10px;
+  }
+  .fa-heart {
+    font-size: 20px; /* Adjust icon size as needed */
+    margin-right: 5px; /* Add some space between the icon and text */
+    color: #ff0000; /* Heart icon color (red) */
+}
+.wishlist
+{
+    color:black;
+    background-color:#efcc9f;
+    margin-top: 10px;
+     font-size: 12px;
+}
+.wishlist:hover {
+    background-color: #f46a6a; /* Change background color on hover */
+}
+.fa-shopping-cart
+{
+    color:black;
+}
+.buy:hover
+{
+    background-color:#f5b869; 
+}
+.fa-shopping-cart:hover
+{
+    background-color:#f5b869; 
+}
+.btn{
+    height:38px;
+    font-size: 10px;
+
+}
+.btn:hover{
+    background-color:#f5b869; 
+}
+
