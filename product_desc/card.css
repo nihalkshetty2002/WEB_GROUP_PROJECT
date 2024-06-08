@@ -1,0 +1,54 @@
+*
+{
+    margin:0%;
+    padding:0%;
+    font-family: 'Poppins',sans-serif;
+}
+.card
+{
+    display:flex;
+    margin-top:22px;
+
+}
+.left img{
+    width:366px;
+    margin-inline: 32px;
+}
+.card.img img{
+    width:74px;
+    margin-left: 22px;
+}
+.card.right
+{
+    margin: 11px;
+}
+.right h3{
+    margin-top:11px;
+}
+.right h1{
+    margin-top:11px;
+}
+.right i{
+    margin-top:11px;
+}
+/* .right h4{
+    margin-top: ;
+} */
+/* .right p{
+    margin-top: ;
+} */
+.right button{
+    width:200px;
+    height: 50px;
+    background-color: lightblue;
+    margin-top:22px;
+    font-size: 25px;
+    border: none;
+    margin-inline: 22px;
+    font-weight: 600;
+    margin-left: 22px;
+}
+.right button:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
