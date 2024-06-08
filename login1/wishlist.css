@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.wishlist-item {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.wishlist-item:hover{
+    /* border:5px solid blanchedalmond; */
+    box-shadow: 5px 5px 10px 0 blanchedalmond;
+}
+
+.product-image {
+    width:300px;
+    height:300px;
+    transition: transform 0.5s;
+}
+.product-image:hover{
+    transform: scale(1.1); 
+    cursor:zoom-in;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.description {
+    text-align: center;
+}
+
+.btn-cart, .btn-remove {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-cart {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: large;
+}
+.btn-cart:hover{
+    background-color: antiquewhite;
+    color:black;
+}
+.btn-remove:hover{
+    background-color: blanchedalmond;
+    color:black;
+}
+
+.btn-remove {
+    background-color:chocolate;
+    color: white;
+    border: none;
+    font-size: large;
+}
+.img1{
+    width:40px;
+    height: 40px;
+    padding-bottom: 5px;
+    
+}
+/* footer */
+#footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 30px;
+}
+#footer h1{
+    color:whitesmoke;
+    padding-top: 30px;
+}
+#footer p{
+    color: whitesmoke;
+}
+.icons i{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright, .credite{
+    color: whitesmoke;
+   
+}
+.name{
+    background-color: white;
+    color:black;
+}
+.mb-4{
+    padding: 20px;
+    background-color: bisque;
+}
+/* footer {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 10px solid black;
+} */
+ .navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color: rgb(219, 150, 80);
+    border-radius: 50px;
+}
+@media screen and (max-width:420px){
+    .social-link i img{
+        width: 20px;
+    }
+}
+.logo h3{
+    font-weight: bold;
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+    }
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+
+#navbar-color{
+    background-color: rgba(238,224,208);
+}
+.navbar-nav{
+    
+    margin:auto;
+}
+
+.nav-link{
+    text-decoration: underline;
+    margin-left: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: 0.5s ease;
+    
+}
+.nav-link:hover{
+    color: rgb(243, 147, 52);
+}
+
+/* Dropdown menu */
+.dropdown-menu{
+    width: 50px;
+}

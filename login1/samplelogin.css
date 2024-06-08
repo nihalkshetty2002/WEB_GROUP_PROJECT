@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+body{
+    background-color: rgba(238,224,208);
+}
+.img-fluid{
+    height:400px;
+    border-radius: 5px;
+}
+.form-group input[type="email"],input[type="password"]{
+    border-radius: 20px;
+    font-size: 15px;
+    
+}
+h4{
+    text-align: center;
+    font-size: 30px;
+
+}
+.card{
+    top:100px;
+    border-radius: 25px;
+   
+    
+}
+button #login{
+    border-radius: 10px;
+}
+.close{
+    text-align: end;
+    cursor: pointer;
+}
+p{
+    font-size: 15px;
+    text-align: center;
+}
