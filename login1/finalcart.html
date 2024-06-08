@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS (you may need to adjust the path) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="./image/logo1.png">
+    <title>Shopping Cart</title>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  font-family: "poppins",sans-serif;   
+   }
+        .card-img-top{
+            width: 250px;
+            height: 250px;
+            padding: 5px;
+            border-radius: 15px;
+            margin: auto;
+        }
+       .card{
+        border:2px solid antiquewhite;
+        border-radius: 15px;
+        box-shadow: bisque;
+        transition: transform 1.0s;
+       }
+       .card:hover{
+        border: 2px solid black;
+        transform: scale(1.1);
+        box-shadow: beige;
+
+       }
+       .col-12 {
+        margin-bottom: 25px;
+       }
+       .head{
+        text-align: justify;
+        background-color:bisque;
+        padding: 20px;
+        font-size: 30px;
+        border: bottom 2px solid black;
+       }
+       .head h3{
+        margin-left: 20px;
+       }
+       
+       .btn-primary{
+        background-color: black;
+        color:wheat;
+       }
+       .btn-danger{
+        background-color: burlywood;
+        color:black;
+       }
+    /* footer */
+#footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 30px;
+}
+#footer h1{
+    color:whitesmoke;
+    padding-top: 30px;
+}
+#footer p{
+    color: whitesmoke;
+}
+.icons i{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright, .credite{
+    color: whitesmoke;
+   
+}
+      .navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color: rgb(219, 150, 80);
+    border-radius: 50px;
+}
+@media screen and (max-width:420px){
+    .social-link i img{
+        width: 20px;
+    }
+}
+.logo h3{
+    font-weight: bold;
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+    }
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+
+#navbar-color{
+    background-color: rgba(238,224,208);
+}
+.navbar-nav{
+    
+    margin:auto;
+}
+
+.nav-link{
+    text-decoration: underline;
+    margin-left: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: 0.5s ease;
+    
+}
+.nav-link:hover{
+    color: rgb(243, 147, 52);
+}
+
+/* Dropdown menu */
+.dropdown-menu{
+    width: 50px;
+}
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-top">
+            <div class="social-link">
+                <i><img  src="./image/twitter.png" alt="twitterlogo" width="30px" height="30px"></i>
+                <i><img src="./image/facebook.png" alt="facebooklogo" width="30px" height="30px"></i>
+                <i><img src="./image/google-plus.png" alt="google-pluslogo" width="30px" height="30px"></i>
+            </div>
+            <div class="logo">
+                <h3>SimplyHome</h3>
+            </div>
+            <div class="icons">
+                <a href=""><i><img src="./image/search.png" alt="searchicon" width="20px" height="20px"></i></a>
+                <a href="wishlist.html"><i><img src="./image/heart.png" alt="heartlogo" width="20px"></i></a>
+                <i><img src="./image/shopping-cart.png" alt="carticon" width="25px" height="25px"></i>
+                <!-- <button class="sign-up" href="#">Sign In</button> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="main-content">
+        <nav class="navbar navbar-expand-md" id="navbar-color">
+            <div class="container">
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span><i><img src="./image/menu.png" alt="menuicon" width="30px"></i></span>
+                    </button>
+                
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="../homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Furniture</a>
+                            <ul class="dropdown-menu dropdown-menu-lg">
+                              <li class="dropdown-item col-md-3"><a class="nav-link" href="#">Chair</a></li>
+                              <li class="dropdown-item"><a class="nav-link" href="#">Table</a></li>
+                              <li class="dropdown-item"><a class="nav-link" href="#">Sofa</a></li>
+                              <li class="dropdown-item"><a class="nav-link" href="#">Bed</a></li>
+                              <li class="dropdown-item"><a class="nav-link" href="#">Storage</a></li>
+                              <li class="dropdown-item"><a class="nav-link" href="#">Outdoor</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Top Chair</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Chair</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Brands</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../contactus.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="samplelogin.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../login1/profile.html" >Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    <!--  -->
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <!-- <div class="card-header">
+                        <span class="heart-icon" >❤</span>
+                    </div>  -->
+                    <img src="im3.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Sofa  &nbsp;</h5>
+                        <p class="card-text price">&#8377;350000</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <div class="cart-actions mt-3">
+                           
+                            <button class="btn btn-primary mr-2">Buy</button>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <!-- <div class="card-header">
+                        <span class="heart-icon" >❤</span>
+                    </div>  -->
+                    <img src="im2.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Classy Chair  &nbsp;</h5>
+                        <p class="card-text price">&#8377;3000</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span>
+                        </div>
+                        <div class="cart-actions mt-3">
+                           
+                            <button class="btn btn-primary mr-2">Buy</button>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <!-- <div class="card-header">
+                        <span class="heart-icon" >❤</span>
+                    </div>  -->
+                    <img src="im4.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Office Sofa  &nbsp;</h5>
+                        <p class="card-text price">&#8377;500000</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span>
+                            <span class="star">&#9734;</span>
+                        </div>
+                        <div class="cart-actions mt-3">
+                           
+                            <button class="btn btn-primary mr-2">Buy</button>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <!-- <div class="card-header">
+                        <span class="heart-icon" >❤</span>
+                    </div>  -->
+                    <img src="img1.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Dinner Set &nbsp;</h5>
+                        <p class="card-text price">&#8377;30000</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span>
+                        </div>
+                        <div class="cart-actions mt-3">
+                           
+                            <button class="btn btn-primary mr-2">Buy</button>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+           
+        </div>
+    </div>
+   <!-- footer -->
+   <footer id="footer">
+    <h1 class="text-center">SimplyHome</h1>
+    <p class="text-center">For more information kindly follow us on the below link </p>
+    <div class="copyright text-center">
+        &copy; Copyright <strong><span>SimplyHome</span></strong>. All Rights Reserved
+    </div>
+    <div class="credite text-center">
+        Designed by <a href="#">GROUP-5</a>
+    </div>
+</footer>
+    
+</body>
+</html>
